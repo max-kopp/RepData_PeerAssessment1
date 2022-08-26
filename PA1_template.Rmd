@@ -36,7 +36,7 @@ paste("Median of steps per day:", median(steps_per_day, na.rm = TRUE))
 
 ### What is the average daily activity pattern?
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=TRUE, message=FALSE}
 library(dplyr)
 ```
 
@@ -114,7 +114,7 @@ act_fill <- act_fill %>% mutate(
 
 Make a time-series plot comparing average daily steps between weekdays and weekends:
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=TRUE, message=FALSE}
 library(ggplot2)
 ```
 

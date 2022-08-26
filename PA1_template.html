@@ -390,6 +390,7 @@ hist(steps_per_day)</code></pre>
 </div>
 <div id="what-is-the-average-daily-activity-pattern" class="section level3">
 <h3>What is the average daily activity pattern?</h3>
+<pre class="r"><code>library(dplyr)</code></pre>
 <p>Calculate the average steps for each 5-min time interval across all
 days:</p>
 <pre class="r"><code>steps_by_interval &lt;- act %&gt;%
@@ -448,6 +449,7 @@ weekend day:</p>
     )</code></pre>
 <p>Make a time-series plot comparing average daily steps between
 weekdays and weekends:</p>
+<pre class="r"><code>library(ggplot2)</code></pre>
 <pre class="r"><code># calculate aggregated steps
 steps_by_interval_fill &lt;- act_fill %&gt;%
                      group_by(week_cat, interval) %&gt;% 
